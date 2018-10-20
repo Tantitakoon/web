@@ -5,6 +5,7 @@ var bodyParser = require('body-parser');
 var multer  =   require('multer');
 var fs = require('fs');
 
+console.log('==========start============');
 app.use(express.static(__dirname + '/web/'));
 app.use(bodyParser.urlencoded({
     extended: false
