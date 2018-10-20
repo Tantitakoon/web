@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
-var mongo_db = require('./mongo_db');
+//var mongo_db = require('./mongo_db');
 var multer  =   require('multer');
 var fs = require('fs');
 
