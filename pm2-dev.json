@@ -1,0 +1,24 @@
+{
+    "apps": [{
+        "exec_mode": "cluster",
+        "instances": 1,
+        "script": "./index.js",
+        "name": "web-host",
+        "retain": "all",
+                "compress": true,
+                "dateFormat": "YYYY-MM-DD_HH-mm-ss",
+                "workerInterval": 10,
+                "rotateInterval": "*/60 * * * *",
+        "rotateModule": true,
+      
+        "env": {
+            "APP_HOST": "0.0.0.0",
+            "APP_PORT": "443",
+            "USE_HTTPS": true,
+            "SAVE_LOG": true,
+            "LOG_ROTATE_TIME": 60,
+            "toyota":["camry","revo","fortuner","vigo"]
+        }
+    }]
+
+}
