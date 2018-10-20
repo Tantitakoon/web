@@ -28,8 +28,8 @@ var storage =   multer.diskStorage({
 
 
 
-var database =  new mongo_db();
-database.create_Database();
+//var database =  new mongo_db();
+//database.create_Database();
 app.get('/',function(req,res){
     
    res.sendfile(__dirname+"/web/public/index.html");
@@ -39,7 +39,7 @@ app.get('/admin',function(req,res){
 });
 app.post('/insert',function(req,res){
     upload(req,res,function(err) {
-        database.insertData(req.body,req.files);
+        //database.insertData(req.body,req.files);
         //console.log(req.body);
         //console.log(req.files);
         if(err) {
