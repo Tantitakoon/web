@@ -4,8 +4,8 @@ var bodyParser = require('body-parser');
 //var mongo_db = require('./mongo_db');
 var multer  =   require('multer');
 var fs = require('fs');
+var a=0;
 
-console.log('==========start============');
 app.use(express.static(__dirname + '/web/'));
 app.use(bodyParser.urlencoded({
     extended: false
@@ -32,7 +32,7 @@ var storage =   multer.diskStorage({
 //var database =  new mongo_db();
 //database.create_Database();
 app.get('/',function(req,res){
-    
+    console.log(a++);
    res.sendfile(__dirname+"/web/public/index.html");
 });
 app.get('/admin',function(req,res){
