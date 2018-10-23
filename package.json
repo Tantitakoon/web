@@ -4,8 +4,7 @@
   "description": "A simple example of nodejs,mongodb,passportjs login api",
   "main": "./server.js",
   "scripts": {
-
-    "start": "pm2-runtime pm2-dev.json",
+     "start": "./server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
