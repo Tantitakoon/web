@@ -33,7 +33,7 @@ app.post('/registration', urlencodedParser, function (req, res) {
             }
             const jsonString = JSON.stringify(json)
             fs.writeFile('myuser.json', jsonString, 'utf8', function () {
-                res.send('ok : ' + req.body.email + ', ' + req.body.password + ' Salt : ' + salt + ' Hash : ' + hash)
+                res.send('okkkk : ' + req.body.email + ', ' + req.body.password + ' Salt : ' + salt + ' Hash : ' + hash)
             });
         })
     })
@@ -47,7 +47,7 @@ app.post('/login', urlencodedParser, function (req, res) {
             console.log(err);
         } else {
             obj = JSON.parse(data)
-            if (obj.email == req.body.email) { // check ว่า email ที่ผู้ใช้กรอกมาใหม่ ตรงกับที่เราเก็บข้อมูลไว้หรือไม่
+            if (obj.email == req.body.email) { // check ว่า email ที่ผู้ใช้กรอกมาใหม่ ตรงกับที่เราเก็บข้อมูลไว้หรือไม่ดดด
                 bcrypt.compare(req.body.password, obj.hash, function (err, result) {
                     if (result) {
                         //ถ้า result == true รหัสผ่านตรง
