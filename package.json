@@ -1,11 +1,21 @@
 {
-    "name": "Node-Express4-Session",
-    "version": "0.0.1",
-    "main": "server.js",
-    "dependencies": {
-        "body-parser": "^1.7.0",
-        "ejs": "^1.0.0",
-        "express": "^4.8.7",
-        "express-session": "^1.7.6"
-    }
+  "name": "nodejs-simple-login",
+  "version": "1.0.0",
+  "description": "A simple example of nodejs,mongodb,passportjs login api",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs",
+    "passportjs",
+    "mongodb"
+  ],
+  "author": "Jirapat Malai",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^3.0.2",
+    "express": "^4.16.4",
+    "pug": "^2.0.3"
+  }
 }
